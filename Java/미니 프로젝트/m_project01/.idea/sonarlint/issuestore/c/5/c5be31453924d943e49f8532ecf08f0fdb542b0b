@@ -1,0 +1,20 @@
+
+W
+java:S2259P"AA "NullPointerException" could be thrown; "msg" is nullable here.(«Þò²
+R
+java:S1854V"<Remove this useless assignment to local variable "dbprofil".(²Ï®Ó
+C
+java:S1481V"-Remove this unused "dbprofil" local variable.(²Ï®Ó
+R	java:S125×"<This block of commented-out lines of code should be removed.(¡îåÕ
+W	java:S125Ú"<This block of commented-out lines of code should be removed.(¤Ô„Éúÿÿÿÿ
+R	java:S125Ý"<This block of commented-out lines of code should be removed.(³µ‘°
+O
+java:S1854û"8Remove this useless assignment to local variable "msg2".(¼šÑ«
+N
+java:S1854ù"7Remove this useless assignment to local variable "msg".(´Ó¬Ú
+?
+java:S1481ù"(Remove this unused "msg" local variable.(´Ó¬Ú
+@
+java:S1481û")Remove this unused "msg2" local variable.(¼šÑ«
+F
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ

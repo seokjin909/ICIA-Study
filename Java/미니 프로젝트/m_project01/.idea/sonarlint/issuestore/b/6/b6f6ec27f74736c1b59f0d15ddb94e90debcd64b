@@ -1,0 +1,7 @@
+
+k	java:S116"VRename this field "c_serialnum" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°––Œ
+i	java:S116"ORename this field "m_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“œ­ªùÿÿÿÿ
+k	java:S116	"QRename this field "b_code" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ž÷ƒÖûÿÿÿÿ
+m	java:S116
+"SRename this field "c_stdate" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜îøªüÿÿÿÿ
+m	java:S116"SRename this field "c_endate" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÞ »üÿÿÿÿ

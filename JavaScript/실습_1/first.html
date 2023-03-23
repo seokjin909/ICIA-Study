@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- head -->
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="jin">
+   <meta name="date" content="2022.08.23">
+   <link rel="shortcut icon" href="favicon.ico">
+   <title>1번</title>
+</head>
+
+<!-- body -->
+<body>
+ <h1 id="txt"></h1>
+</body>
+
+<!-- script -->
+<script>
+    var x = prompt("정수를 입력하십시오.")
+    var txt = document.getElementById("txt");
+    if(x<100){
+        txt.innerHTML = ("x의 값은 : " + x);
+    } else {
+        alert("100보다 작은 정수를 입력하십시오!")
+    };
+</script>
+</html>

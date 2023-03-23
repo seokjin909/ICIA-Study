@@ -1,0 +1,47 @@
+
+fieldset {
+    width: 500px;
+}
+legend {
+    text-align: center;
+}
+.hidden {
+    display: none;
+}
+
+#space {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+#grade {
+    border: 1px solid black;
+    width: 480px;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+}
+#result {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+    width: 200px;
+    float: left;
+}
+#result2 {
+    margin-left: 0px;
+    width: 200px;
+    height: 123.5px;
+    padding: 10px;
+    text-align: left;
+    float: right;
+}
+#result2>button { 
+    width: 200px;
+    height: 145px;
+    font-size: 20px;
+    background-color:cornflowerblue;
+    border: none;
+}

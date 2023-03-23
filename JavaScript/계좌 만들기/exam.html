@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- head -->
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="jin">
+   <meta name="date" content="2022.08.18">
+   <link rel="shortcut icon" href="favicon.ico">
+   <title>용돈기입장</title>
+<style>
+    fieldset {
+        width: 600px;
+        text-align: center;
+        margin: auto;
+        border: 1px solid gray;
+    }
+
+    div {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        box-sizing: border-box;
+        float:left;
+        text-align: center;
+    }
+
+    #amount {
+        width: 280px;
+        height: 80px;
+        border: 1px solid black;
+        text-align: center;
+        border-radius: 5px;
+        font-size: large;
+        box-sizing: border-box;
+        margin: 3px;
+        margin-top: 10px;
+    }
+
+    span {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+    span>img {
+        width: 90px;
+        height: 90px;
+        margin-top: 60px;
+    }
+</style>
+</head>
+
+<!-- body -->
+<body>
+    <fieldset>
+        <legend><img src="../../Image/계좌 만들기/pig_bank.png" width="200px"></legend>
+        <div id="L">
+            <input type="text" id="amount" placeholder="금액을 입력하시오." onclick="account.reset()">
+            <span>
+                <img src="../../Image/계좌 만들기/deposit.webp" title="입금" id="deposit" onclick="account.deposit()">
+                <img src="../../Image/계좌 만들기/withdraw.png" title="출금" id="withdraw" onclick="account.withdraw()">
+                <img src="../../Image/계좌 만들기/pig_deposit.png" title="잔액확인" id="balance" onclick="account.toString()" onmouseover="account.reset()">
+            </span>
+        </div>
+        <div id="R">
+            <h2 id="result"></h2>
+        </div>
+    </fieldset>
+</body>
+
+<!-- script -->
+<script>
+
+var account = {};
+account.balance = 0;
+
+account.reset = function(){
+    document.getElementById("result").innerHTML = "";
+}
+
+account.deposit = function(amount){
+    var amount1 = document.getElementById("amount");
+    var amount = parseInt(amount1.value);
+    if(amount1.value==""){
+        document.getElementById("result").innerHTML = "잘못 입력되었습니다.";
+    } else {
+        this.balance += amount;
+        document.getElementById("result").innerHTML = ("===================" + "<br>" + amount + "원 입금되었습니다." + "<br><br><br><br><br> 잔액은 " + this.balance + "원 입니다.<br>===================");
+
+    } 
+    amount1.value="";
+}
+
+account.withdraw = function(amount){
+    var amount1 = document.getElementById("amount");
+    var amount = parseInt(amount1.value);
+    if(amount1.value==""){
+        document.getElementById("result").innerHTML = "잘못 입력되었습니다.";
+    } else {
+        if(this.balance < amount){
+            alert("잔액이 " + (amount-this.balance) + "원 부족합니다.");
+        } else {
+            this.balance -= amount;
+            document.getElementById("result").innerHTML = ("===================" + "<br>" + amount + "원 출금되었습니다." + "<br><br><br><br><br> 잔액은 " + this.balance + "원 입니다.<br>===================");
+        }
+    } 
+    amount1.value ="";
+}
+
+account.toString = function(){
+    document.getElementById("result").innerHTML = ("===================" + "<br>" + this.balance + "원 남았습니다.");
+}
+</script>
+</html>

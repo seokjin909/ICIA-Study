@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- head -->
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="jin">
+   <meta name="date" content="2022.09.01">
+   <link rel="stylesheet" href="logIn.css">
+   <title>회원번호 조회</title>
+</head>
+
+<!-- body -->
+<body>
+    <fieldset id="logInF" class="hidden">
+        <form id="logInForm">
+            회원번호 : <input type="number" id="serialNum" required>
+            <button>등록</button> <br>
+        </form>
+        <form id="logInForm2">
+            회원번호 : <input type="number" id="serialNumCheck">
+            <button onclick="LogCheck()">조회</button>
+        </form>
+    </fieldset>
+    <h2 id="result" class="hidden"></h2>
+</body>
+
+<!-- script -->
+<script src="logIn.js"></script>
+</html>

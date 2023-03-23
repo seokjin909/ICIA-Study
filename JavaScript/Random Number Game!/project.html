@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- head -->
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="jin">
+   <meta name="date" content="2022.09.08">
+   <link type="text/css" rel="stylesheet" href="project.css">
+   <title>Project</title>
+</head>
+
+<!-- body -->
+<!-- 시작을 누르면 화면에 1~9사이의 랜덤한 수가 4번 나타났다가 사라진다 -->
+<!-- 그리고 화면에 있는 키패드에 나타났다가 사라진 랜덤한 숫자들을 순서대로 눌러야 하는 게임 -->
+<body>
+    <!-- <div id="ranNum">Ramdom Number</div> -->
+    <div class="image_slider">
+        <input type="radio" name="pos" id="pos1">
+        <input type="radio" name="pos" id="pos2">
+        <input type="radio" name="pos" id="pos3"> 
+        <input type="radio" name="pos" id="pos4">
+        <input type="radio" name="pos" id="pos5">
+        <ul>
+            <li>순서에 맞게 번호 입력하기!</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li>Reason!</li>
+        </ul>
+        <p class="pos">
+            <label for="pos1" onclick="change(0)"></label> 
+            <label for="pos2" onclick="change(1)"></label> 
+            <label for="pos3" onclick="change(2)"></label> 
+            <label for="pos4" onclick="change(3)"></label>
+        </p>
+    </div>
+    <div id="showNum"></div>
+    <button id="str">시작하기</button>
+    <button id="str" onclick="reload()" style="display: none;" class="rel">다시하기</button>
+    <div id="result"></div>
+    <button id="str" onclick="check()">정답확인</button>
+    <div id="btns">
+        <button id="str2" onclick="reset()">초기화</button>
+        <button id="str2" onclick="min()">뒤로가기</button>
+    </div>
+    <div id="numPad">
+        <span onclick="padNumber(1)">1</span><span onclick="padNumber(2)">2</span><span onclick="padNumber(3)">3</span>            
+        <span onclick="padNumber(4)">4</span><span onclick="padNumber(5)">5</span><span onclick="padNumber(6)">6</span>
+        <span onclick="padNumber(7)">7</span><span onclick="padNumber(8)">8</span><span onclick="padNumber(9)">9</span>
+    </div>
+
+</body>
+
+<!-- script -->
+<script src="project.js">
+</script>
+</html>

@@ -1,0 +1,15 @@
+
+x
+java:S1488"]Immediately return this expression instead of assigning it to the temporary variable "dbpwd".(š±Âıÿÿÿÿ
+x
+java:S1488."]Immediately return this expression instead of assigning it to the temporary variable "dbpwd".(Ÿ‹ñÑøÿÿÿÿ
+x
+java:S1488B"]Immediately return this expression instead of assigning it to the temporary variable "bList".(ÔØ÷õûÿÿÿÿ
+w
+java:S1488J"\Immediately return this expression instead of assigning it to the temporary variable "book".(É’Íùûÿÿÿÿ
+s
+java:S1488y"]Immediately return this expression instead of assigning it to the temporary variable "mList".(½Ã‘§
+Q
+java:S1854i";Remove this useless assignment to local variable "dbAdmin".(çÓÕ
+G
+java:S1128",Remove this unused import 'java.sql.Struct'.(Í‘©–ûÿÿÿÿ

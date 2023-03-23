@@ -1,0 +1,143 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+.image_slider > ul, .image_slider > li {
+	list-style: none;
+}
+
+.image_slider {
+	position: relative;
+	overflow: hidden;
+    border: 1px solid;
+    width: 214px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.image_slider ul {
+	width: 500%;
+	height: 100%;
+}
+
+.image_slider li {
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+.image_slider input {
+	display: none;
+}
+.image_slider p {
+    display: none;
+	text-align: center;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.image_slider>p>label {
+	display: inline-block;
+	vertical-align: middle;
+	width: 10px;
+	height: 10px;
+	border: 2px solid #eee;
+	background: #fff;
+	transition: 0.3s;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+#pos1:checked ~ ul{
+	margin-left: 0%;
+	transition: 0.5s;
+}
+
+#pos2:checked ~ ul{
+	margin-left: -100%;
+	transition: 0.5s;
+}
+
+#pos3:checked ~ ul{
+	margin-left: -200%;
+	transition: 0.5s;
+}
+
+#pos4:checked ~ ul{
+	margin-left: -300%;
+	transition: 0.5s;
+}
+#pos5:checked ~ ul{
+	margin-left: -400%;
+	transition: 0.5s;
+}
+
+#numPad>span {
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #E0F9B5;
+    transition-duration: 0.5s;
+    color: black;
+}
+#numPad>span:hover {
+    background-color: #A5DEE5;
+    color: white;
+}
+#numPad {
+    width: 275px;
+    height: 225px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    align-content: center;
+}
+#str {
+    width: 216px;
+    height: 30px;
+    border: 1px solid darkcyan;
+    margin-top: 5px;
+    color: black;
+    background-color: white;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+#str:hover {
+    background-color:darkcyan;
+    color: white;
+}
+#str2 {
+    width: 106px;
+    height: 30px;
+    border: 1px solid darkcyan;
+    margin-top: 5px;
+    color: black;
+    background-color: white;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+#str2:hover {
+    background-color:darkcyan;
+    color: white;
+}
+#result {
+    display: block;
+    width: 214px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid;
+    margin-top: 5px;
+    color: black;
+    background-color: skyblue;
+}
+#result:focus {
+    outline: none;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<!-- head -->
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="author" content="jin">
+   <meta name="date" content="2022.08.23">
+   <link rel="shortcut icon" href="favicon.ico">
+   <title>2번</title>
+   <style>
+    
+   </style>
+</head>
+
+<!-- body -->
+<body>
+        <h1>1 부터 입력받은 수까지의 합</h1>
+        <h2 id="result"></h2>
+</body>
+<!-- script -->
+<script>
+
+        var i = prompt("임의의 수를 입력하시오.");
+        var result = document.getElementById("result");
+        var sum=0;
+
+        for(var x=1; x<=i; x++){
+            sum = sum + x;
+            result = ("합은 : " + sum + " 입니다.");
+        }
+        document.write(result);
+
+</script>
+</html>
